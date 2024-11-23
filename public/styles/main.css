@@ -1,0 +1,99 @@
+body {
+  background: rgb(204,238,174);
+  background: radial-gradient(circle, rgba(204,238,174,1) 0%, rgba(148,187,233,1) 30%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow: hidden;
+  color: white;
+}
+
+form {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+input,
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+input {
+  width: 80%;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline:  2px solid #00ffae;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+}
+
+.weather-info {
+  margin-bottom: 30px;
+}
+
+.weather-info .emoji {
+  font-size: 9rem;
+}
+
+.weather-info .temperature,
+.weather-info .city {
+  text-align: center;
+}
+
+.weather-info .temperature {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.details {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+  
+}
+
+.extras {
+  width: 100px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.symbol,
+.extras-rate {
+  display: flex;
+}
+
+.symbol {
+  grid-row: span 2;
+  justify-content: center;
+}
+
+.extras-name {
+  grid-area: 2/2/-1/-1;
+}
+
+.extras-rate {
+  font-size: 1.5rem;
+}
+
+.wind p {
+  padding-left: 5px;
+}
+
+
+
+
