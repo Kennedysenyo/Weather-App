@@ -41,8 +41,8 @@ button {
   margin-bottom: 30px;
 }
 
-.weather-info .emoji {
-  font-size: 9rem;
+#icon #wicon {
+  width: 100%;
 }
 
 .weather-info .temperature,
