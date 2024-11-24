@@ -18,6 +18,7 @@ config();
 // Open Weather - https://openweathermap.org/
 const openWeatherAPI_URL = "https://api.openweathermap.org/data/2.5/weather";
 const openWeatherAPI_KEY = process.env.OPEN_WEATHER_API_KEY;
+
 app.get("/", async (req, res) => {
   try {
     const response = await axios.get(freeIpAPI_URL);
@@ -27,7 +28,7 @@ app.get("/", async (req, res) => {
 
     try {
       const weatherResponse = await axios.get(
-        `${openWeatherAPI_URL}?lat=${lat}&lon=${lon}&units=metric&appid=${openWeatherAPI_KEY}`
+        `${openWeatherAPI_URL}?lat=${lat}&lo=${lon}&units=metric&appid=${openWeatherAPI_KEY}`
       );
 
       // Use `weatherResponse.data` instead of `JSON.stringify` to keep it as an object

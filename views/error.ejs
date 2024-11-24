@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KYW</title>
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body class="error-message gradient-background">
-  <h1><%= _message %></h1>
-</body>
-</html>
+
+<%- include("partials/header.ejs") %>
+
+  <main class="error-message">
+    <h1><%= _message %></h1>
+  </main>
+
+<%- include("partials/footer.ejs") %>
