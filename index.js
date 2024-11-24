@@ -28,7 +28,7 @@ app.get("/", async (req, res) => {
 
     try {
       const weatherResponse = await axios.get(
-        `${openWeatherAPI_URL}?lat=${lat}&lo=${lon}&units=metric&appid=${openWeatherAPI_KEY}`
+        `${openWeatherAPI_URL}?lat=${lat}&lon=${lon}&units=metric&appid=${openWeatherAPI_KEY}`
       );
 
       // Use `weatherResponse.data` instead of `JSON.stringify` to keep it as an object
